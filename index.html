@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Valetech</title>
+</head>
+<body>
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+    <section>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" required>
+                <br>
+                <label for="age">Idade</label>
+                <input type="number" name="age" min="12" max="100" required>
+                <br>
+                <label for="birthDate">Data De Nascimento</label>
+                <input type="date" name="birthDate">
+                <br>
+                <label for="userEmail">Email</label>
+                <input type="email" name="userEmail" required>
+                <br>
+                <label for="userTelephone">Email</label>
+                <input type="tel" name="userTelephone" pattern="[0-9]{11}" placeholder="DDD + Número">
+                <br>
+                <label for="userImg">Foto de perfil</label>
+                <input type="file" name="userImg" accept="image/*">
+                <br>
+            </fieldset>
+            
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
