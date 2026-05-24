@@ -1,62 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa Valetech</title>
 </head>
 <body>
+
     <header>
         <h1>Pesquisa Online</h1>
     </header>
+
     <section>
         <form action="" method="get">
+
             <fieldset>
                 <legend>Dados Pessoais</legend>
+
                 <label for="userName">Nome</label>
-                <input type="text" name="userName" required>
+                <input type="text" id="userName" name="userName" required>
                 <br>
+
                 <label for="age">Idade</label>
-                <input type="number" name="age" min="12" max="100" required>
+                <input type="number" id="age" name="age" min="12" max="100" required>
                 <br>
-                <label for="birthDate">Data De Nascimento</label>
-                <input type="date" name="birthDate">
+
+                <label for="birthDate">Data de Nascimento</label>
+                <input type="date" id="birthDate" name="birthDate">
                 <br>
+
                 <label for="userEmail">Email</label>
-                <input type="email" name="userEmail" required>
+                <input type="email" id="userEmail" name="userEmail" required>
                 <br>
-                <label for="userTelephone">Email</label>
-                <input type="tel" name="userTelephone" pattern="[0-9]{11}" placeholder="DDD + Número">
+
+                <label for="userTelephone">Telefone</label>
+                <input type="tel" id="userTelephone" name="userTelephone" pattern="[0-9]{11}" placeholder="DDD + Número">
                 <br>
-                <label for="userImg">Foto de perfil</label>
-                <input type="file" name="userImg" accept="image/*">
+
+                <label for="userImg">Foto de Perfil</label>
+                <input type="file" id="userImg" name="userImg" accept="image/*">
                 <br>
+
             </fieldset>
+
             <fieldset>
+
                 <legend>Perfil</legend>
+
                 <p>Gênero</p>
-                <input type="radio" name="userGender" value="Feminino">
-                <label for="userGender">Feminino</label>
 
-                <input type="radio" name="userGender" value="Masculino">
-                <label for="userGender">Masculino</label>
+                <input type="radio" id="female" name="userGender" value="Feminino">
+                <label for="female">Feminino</label>
 
-                <input type="radio" name="userGender" value="Notinformed">
-                <label for="userGender">Não informar</label>
+                <input type="radio" id="male" name="userGender" value="Masculino">
+                <label for="male">Masculino</label>
+
+                <input type="radio" id="notInformed" name="userGender" value="Notinformed">
+                <label for="notInformed">Não informar</label>
+
                 <br>
 
                 <label for="estadoCivil">Estado Civil:</label>
-                <select name="estadoCivil">
+
+                <select id="estadoCivil" name="estadoCivil">
                     <option value="nothing">Selecione...</option>
                     <option value="solteiro">Solteiro</option>
                     <option value="casado">Casado</option>
-                    <option value="divorciado">Divorciado</option> 
+                    <option value="divorciado">Divorciado</option>
                 </select>
+
                 <br>
 
                 <label for="userState">Estado:</label>
-                <select name="estado">
+
+                <select id="userState" name="estado">
                     <option value="">Selecione um estado</option>
+
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
                     <option value="AP">Amapá</option>
@@ -85,15 +104,44 @@
                     <option value="SE">Sergipe</option>
                     <option value="TO">Tocantins</option>
                 </select>
+
                 <br>
-                
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Hábitos</legend>
+
                 <label for="userCity">Digite sua cidade:</label>
-                <input type="text" name="userCity">
+                <input type="text" id="userCity" name="userCity">
+
+                <br>
+
+                <input type="checkbox" id="instagram">
+                <label for="instagram">Instagram</label>
+
+                <br>
+
+                <input type="checkbox" id="x">
+                <label for="x">X</label>
+
+                <br>
+
+                <input type="checkbox" id="linkedin">
+                <label for="linkedin">LinkedIn</label>
+
+                <br>
+
+                <input type="checkbox" id="whatsapp">
+                <label for="whatsapp">Whatsapp</label>
 
             </fieldset>
 
             <button type="submit">Enviar</button>
+
         </form>
     </section>
+
 </body>
 </html>
